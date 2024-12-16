@@ -8,7 +8,6 @@ import { BankAccount } from 'src/bankAccount.entity';
 import { AccountDetails } from 'src/accountDetails.entity';
 import { Accounts } from 'src/accounts.entity';
 import { AccountType } from 'src/accountType.entity';
-import { Transaction } from 'src/transaction.entity';
 
 @Module({
   imports: [
@@ -28,7 +27,6 @@ import { Transaction } from 'src/transaction.entity';
     TypeOrmModule.forFeature([AccountDetails]),
     TypeOrmModule.forFeature([Accounts]),
     TypeOrmModule.forFeature([AccountType]),
-    TypeOrmModule.forFeature([Transaction]),
 
     // TypeOrmModule.forFeature([
     //   TestEntity,
